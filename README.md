@@ -1,10 +1,10 @@
 # ⚡ Zirr - Modern React Starter CLI
 
 [![GitHub stars](https://img.shields.io/github/stars/dev-adelacruz/zirr?style=social)](https://github.com/dev-adelacruz/zirr)
-[![npm version](https://img.shields.io/npm/v/@dev.aldrindc/zirr)](https://www.npmjs.com/package/@dev.aldrindc/zirr)
+[![npm version](https://img.shields.io/npm/v/zirr-cli)](https://www.npmjs.com/package/zirr-cli)
 [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
 [![Node.js Version](https://img.shields.io/badge/node-%3E%3D12.0.0-brightgreen)](https://nodejs.org/)
-[![Downloads](https://img.shields.io/npm/dt/@dev.aldrindc/zirr)](https://www.npmjs.com/package/@dev.aldrindc/zirr)
+[![Downloads](https://img.shields.io/npm/dt/zirr-cli)](https://www.npmjs.com/package/zirr-cli)
 
 A professional command-line tool to scaffold modern React applications with production-ready configurations. Based on the elegant template from the `wifi_qr` project, Zirr provides a beautiful foundation for any React application with zero configuration overhead.
 
@@ -39,7 +39,7 @@ Zirr eliminates the tedious setup process for modern React projects. Instead of 
 #### Option 1: Install from npm (Recommended)
 ```bash
 # Install globally from npm
-npm install -g @dev.aldrindc/zirr
+npm install -g zirr-cli
 
 # Verify installation
 zirr --version
@@ -60,7 +60,7 @@ npm link
 #### Option 3: Direct Usage (No Installation)
 ```bash
 # Run with npx (no installation needed)
-npx @dev.aldrindc/zirr my-app
+npx zirr-cli my-app
 
 # Or run directly from GitHub
 npx github:dev-adelacruz/zirr my-app
