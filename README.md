@@ -1,8 +1,10 @@
 # ⚡ Zirr - Modern React Starter CLI
 
-[![Node.js Version](https://img.shields.io/badge/node-%3E%3D12.0.0-brightgreen)](https://nodejs.org/)
+[![GitHub stars](https://img.shields.io/github/stars/dev-adelacruz/zirr?style=social)](https://github.com/dev-adelacruz/zirr)
+[![npm version](https://img.shields.io/npm/v/zirr)](https://www.npmjs.com/package/zirr)
 [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
-[![CLI Tool](https://img.shields.io/badge/CLI-Tool-purple)](https://github.com)
+[![Node.js Version](https://img.shields.io/badge/node-%3E%3D12.0.0-brightgreen)](https://nodejs.org/)
+[![Downloads](https://img.shields.io/npm/dt/zirr)](https://www.npmjs.com/package/zirr)
 
 A professional command-line tool to scaffold modern React applications with production-ready configurations. Based on the elegant template from the `wifi_qr` project, Zirr provides a beautiful foundation for any React application with zero configuration overhead.
 
@@ -34,27 +36,34 @@ Zirr eliminates the tedious setup process for modern React projects. Instead of 
 
 ### Installation Options
 
-#### Option 1: Local Testing (Recommended for Development)
+#### Option 1: Install from npm (Recommended)
 ```bash
-# Navigate to the zirr-cli directory
-cd /Users/aldrindelacruz/workspace/zirr-cli
-
-# Create a global symlink
-npm link
+# Install globally from npm
+npm install -g zirr
 
 # Verify installation
 zirr --version
 ```
 
-#### Option 2: Global Installation from Local Path
+#### Option 2: Install from GitHub
 ```bash
-npm install -g /Users/aldrindelacruz/workspace/zirr-cli
+# Install directly from GitHub
+npm install -g github:dev-adelacruz/zirr
+
+# Or clone and install locally
+git clone https://github.com/dev-adelacruz/zirr.git
+cd zirr
+npm install
+npm link
 ```
 
 #### Option 3: Direct Usage (No Installation)
 ```bash
-# Run directly from the project
-node /Users/aldrindelacruz/workspace/zirr-cli/bin/zirr.js my-app
+# Run with npx (no installation needed)
+npx zirr my-app
+
+# Or run directly from GitHub
+npx github:dev-adelacruz/zirr my-app
 ```
 
 ### Creating Your First Project
