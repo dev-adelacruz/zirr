@@ -62,19 +62,40 @@ async function createProject(projectName, options) {
     // Create project directory
     fs.ensureDirSync(projectDir);
 
-    // Read template files
+    // Read template files recursively (compatible with older Node versions)
     const templateDir = path.join(__dirname, 'templates');
-    const templateFiles = fs.readdirSync(templateDir, { recursive: true });
+    
+    // Helper function to get all files recursively
+    function getAllFiles(dir) {
+      const files = [];
+      const items = fs.readdirSync(dir);
+      
+      for (const item of items) {
+        const itemPath = path.join(dir, item);
+        const stat = fs.statSync(itemPath);
+        
+        if (stat.isDirectory()) {
+          const subFiles = getAllFiles(itemPath);
+          for (const subFile of subFiles) {
+            files.push(path.join(item, subFile));
+          }
+        } else {
+          files.push(item);
+        }
+      }
+      
+      return files;
+    }
+    
+    const templateFiles = getAllFiles(templateDir);
 
     // Process and copy each template file
     for (const templateFile of templateFiles) {
       const sourcePath = path.join(templateDir, templateFile);
       const targetPath = path.join(projectDir, templateFile);
 
-      if (fs.statSync(sourcePath).isDirectory()) {
-        fs.ensureDirSync(targetPath);
-        continue;
-      }
+      // Ensure target directory exists
+      fs.ensureDirSync(path.dirname(targetPath));
 
       // Read template content
       let content = fs.readFileSync(sourcePath, 'utf-8');
@@ -84,7 +105,6 @@ async function createProject(projectName, options) {
       content = content.replace(/{{PROJECT_TITLE}}/g, projectDetails.title);
 
       // Write to target
-      fs.ensureDirSync(path.dirname(targetPath));
       fs.writeFileSync(targetPath, content);
 
       console.log(chalk.gray(`  ✓ ${templateFile}`));
