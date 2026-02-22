@@ -1,5 +1,5 @@
 {
-  "name": "zirr",
+  "name": "@dev.aldrindc/zirr",
   "version": "1.0.0",
   "description": "CLI tool to generate modern React + Vite + Tailwind CSS projects",
   "main": "src/index.js",
