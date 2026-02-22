@@ -1,0 +1,38 @@
+# Node modules
+node_modules/
+
+# macOS system files
+.DS_Store
+
+# Logs
+*.log
+npm-debug.log*
+
+# Coverage directories
+coverage/
+
+# Environment variables
+.env
+.env.local
+.env*.local
+
+# Build outputs
+dist/
+build/
+
+# Temporary test directories (created by users testing the CLI)
+test-*/
+demo-*/
+temp-*/
+
+# Editor/IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Package lock (optional - some prefer to include it)
+# package-lock.json
+
+# Operating system files
+Thumbs.db

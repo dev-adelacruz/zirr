@@ -1,0 +1,40 @@
+{
+  "name": "zirr",
+  "version": "1.0.0",
+  "description": "CLI tool to generate modern React + Vite + Tailwind CSS projects",
+  "main": "src/index.js",
+  "bin": {
+    "zirr": "bin/zirr.js"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cli",
+    "react",
+    "vite",
+    "tailwind",
+    "template",
+    "starter"
+  ],
+  "author": "dev-adelacruz",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dev-adelacruz/zirr.git"
+  },
+  "homepage": "https://github.com/dev-adelacruz/zirr#readme",
+  "bugs": {
+    "url": "https://github.com/dev-adelacruz/zirr/issues"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^9.5.0",
+    "fs-extra": "^10.1.0",
+    "inquirer": "^8.2.6"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  }
+}
