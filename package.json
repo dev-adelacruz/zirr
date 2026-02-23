@@ -1,7 +1,7 @@
 {
   "name": "@dev.aldrindc/zirr-cli",
   "version": "1.0.1",
-  "description": "CLI tool to generate modern React + Vite + Tailwind CSS projects",
+  "description": "CLI tool to generate modern React + Vite + Tailwind CSS projects. Perfect for vibe coders and Google Gemini Canvas users—instantly run AI-generated code with zero configuration.",
   "main": "src/index.js",
   "bin": {
     "zirr": "bin/zirr.js"
@@ -16,7 +16,13 @@
     "vite",
     "tailwind",
     "template",
-    "starter"
+    "starter",
+    "vibe-coders",
+    "google-gemini",
+    "canvas",
+    "ai-generated-code",
+    "rapid-prototyping",
+    "zero-config"
   ],
   "author": "dev-adelacruz",
   "license": "ISC",

@@ -1,16 +1,33 @@
 # ⚡ Zirr - Modern React Starter CLI
 
+**The perfect launchpad for vibe coders and AI-generated code** • Seamlessly run Google Gemini Canvas creations
+
 [![GitHub stars](https://img.shields.io/github/stars/dev-adelacruz/zirr?style=social)](https://github.com/dev-adelacruz/zirr)
 [![npm version](https://img.shields.io/npm/v/@dev.aldrindc/zirr-cli)](https://www.npmjs.com/package/@dev.aldrindc/zirr-cli)
 [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
 [![Node.js Version](https://img.shields.io/badge/node-%3E%3D12.0.0-brightgreen)](https://nodejs.org/)
 [![Downloads](https://img.shields.io/npm/dt/@dev.aldrindc/zirr-cli)](https://www.npmjs.com/package/@dev.aldrindc/zirr-cli)
 
-A professional command-line tool to scaffold modern React applications with production-ready configurations. Based on the elegant template from the `wifi_qr` project, Zirr provides a beautiful foundation for any React application with zero configuration overhead.
+A professional command-line tool to scaffold modern React applications with production-ready configurations. Built for **vibe coders** who value aesthetics, speed, and modern workflows—whether you're crafting code by hand or leveraging AI tools like **Google Gemini Canvas**. Zirr provides the perfect production environment for AI-generated code with zero configuration overhead.
 
 ## ✨ Why Zirr?
 
-Zirr eliminates the tedious setup process for modern React projects. Instead of spending hours configuring build tools, styling frameworks, and code quality tools, Zirr gives you a complete, polished starting point in seconds.
+### For Vibe Coders & AI-Powered Development
+Zirr is built for developers who value aesthetics, speed, and modern workflows—whether you're crafting code by hand or leveraging AI tools like **Google Gemini Canvas**.
+
+### The Missing Piece for AI-Generated Code
+When Gemini Canvas gives you beautiful React components, you need a production-ready environment to run them. Zirr provides:
+- **Zero-config setup** for AI-generated JSX code
+- **Perfect styling match** with Tailwind CSS (commonly used in AI outputs)
+- **Instant execution** - paste Gemini code and run immediately
+- **No dependency hell** - everything works together out of the box
+
+### Rapid Prototyping Workflow
+1. 🎨 Design your UI in Google Gemini Canvas
+2. 📋 Copy the generated React/JSX code
+3. ⚡ Run `zirr my-ai-project --yes`
+4. 🖊️ Replace `src/App.jsx` with your Gemini code
+5. 🚀 Run `npm run dev` - see your AI-designed app live in seconds
 
 ### Key Advantages
 
